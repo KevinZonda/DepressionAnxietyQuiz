@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp", "KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp\KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp.csproj", "{3D5D7FF4-1669-4278-BE5B-202E65DC62FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KevinZonda.Health.DepressionAnxietyQuiz.Library", "KevinZonda.Health.DepressionAnxietyQuiz.Library\KevinZonda.Health.DepressionAnxietyQuiz.Library.csproj", "{B5E6500C-0221-4E24-B097-F2017942A93A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D5D7FF4-1669-4278-BE5B-202E65DC62FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5D7FF4-1669-4278-BE5B-202E65DC62FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5D7FF4-1669-4278-BE5B-202E65DC62FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5D7FF4-1669-4278-BE5B-202E65DC62FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E6500C-0221-4E24-B097-F2017942A93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E6500C-0221-4E24-B097-F2017942A93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E6500C-0221-4E24-B097-F2017942A93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E6500C-0221-4E24-B097-F2017942A93A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
