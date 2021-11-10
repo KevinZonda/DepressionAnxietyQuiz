@@ -4,7 +4,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
     public static class Info
     {
-        public static readonly Dictionary<int, InfoItem> Dic = new()
+        public static readonly Dictionary<int, InfoItem> Dic = new Dictionary<int, InfoItem>()
         {
             {
                 188, new InfoItem

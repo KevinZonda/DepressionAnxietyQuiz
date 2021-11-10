@@ -5,7 +5,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
     public static class Link
     {
-        public static readonly Dictionary<int, LinkModel> Dic = new()
+        public static readonly Dictionary<int, LinkModel> Dic = new Dictionary<int, LinkModel>()
         {
             {
                 849, LinkModel.Create(

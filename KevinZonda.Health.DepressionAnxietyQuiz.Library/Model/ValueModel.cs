@@ -19,20 +19,20 @@
         public int Value { get; set; }
 
         public static ValueItem CreateScoreItem(int value)
-            => new()
+            => new ValueItem()
             {
                 Value = value,
             };
 
         public static ValueItem CreateLinkItem(int value)
-            => new()
+            => new ValueItem()
             {
                 Type = ValueType.Link,
                 Value = value,
             };
 
         public static ValueItem CreateResultItem(int value)
-            => new()
+            => new ValueItem()
             {
                 Type = ValueType.Result,
                 Value = value,

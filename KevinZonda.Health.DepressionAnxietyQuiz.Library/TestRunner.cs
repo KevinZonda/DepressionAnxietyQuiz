@@ -29,8 +29,8 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
         }
 
         public int Score { get; private set; }
-        public List<int> Results { get; } = new();
-        public List<int> Links { get; } = new();
+        public List<int> Results { get; } = new List<int>();
+        public List<int> Links { get; } = new List<int>();
 
         private readonly List<QuizModel> _quizModel;
 

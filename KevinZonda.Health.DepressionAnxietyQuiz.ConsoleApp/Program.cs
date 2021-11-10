@@ -18,9 +18,9 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
                 return;
             Console.Clear();
 
-            TestRunner tr = new(Quiz.DepressionQuiz);
+            TestRunner tr = new TestRunner(Quiz.DepressionQuiz);
             tr.Run();
-            TestRunner atr = new(Quiz.AnxiousQuiz);
+            TestRunner atr = new TestRunner(Quiz.AnxiousQuiz);
             atr.Run();
             Console.WriteLine(tr);
 

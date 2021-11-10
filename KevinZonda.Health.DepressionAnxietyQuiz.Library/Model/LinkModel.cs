@@ -2,11 +2,11 @@
 {
     public class LinkModel
     {
-        public string Text { get; private init; }
-        public string Link { get; private init; }
+        public string Text { get; private set; }
+        public string Link { get; private set; }
 
         public static LinkModel Create(string text, string link)
-            => new()
+            => new LinkModel()
             {
                 Text = text,
                 Link = link
