@@ -24,16 +24,16 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
             Console.WriteLine(tr);
 
 
-            ScoreHelper.GetByDepression(tr.Score);
-            LinkHelper.PrintLink(tr.Links);
-            LinkHelper.PrintResult(tr.Results);
+            Helper.GetResultByDepressionScore(tr.Score);
+            Helper.PrintLink(tr.Links);
+            Helper.PrintResult(tr.Results);
 
             Console.WriteLine();
 
             Console.WriteLine(atr);
-            ScoreHelper.GetByAnxiety(atr.Score);
-            LinkHelper.PrintLink(atr.Links);
-            LinkHelper.PrintResult(atr.Results);
+            Helper.GetResultByAnxietyScore(atr.Score);
+            Helper.PrintLink(atr.Links);
+            Helper.PrintResult(atr.Results);
             Console.WriteLine(Welcome.End);
         }
 
