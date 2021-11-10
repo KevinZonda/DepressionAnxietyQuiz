@@ -11,7 +11,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
     {
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
             sb.Append("Score: ").Append(Score).AppendLine().Append("Result: ");
             foreach (var i in Results)
             {
@@ -28,20 +28,20 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
             return sb.ToString();
         }
 
-        public int Score { get; set; } = 0;
-        public List<int> Results { get; set; } = new();
-        public List<int> Links { get; set; } = new();
+        public int Score { get; private set; }
+        public List<int> Results { get; } = new();
+        public List<int> Links { get; } = new();
 
-        private List<QuizModel> quizModel;
+        private readonly List<QuizModel> _quizModel;
 
         public TestRunner(List<QuizModel> qzmd)
         {
-            quizModel = qzmd;
+            _quizModel = qzmd;
         }
 
         public void Run()
         {
-            foreach (var v in quizModel)
+            foreach (var v in _quizModel)
             {
                 Run(v);
             }
@@ -88,7 +88,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
                 Console.WriteLine($"[{i.Title}] {i.Name}");
                 Console.WriteLine(i.Body);
             }
-            string isSgl = qm.IsSingle ? "单选题" : "多选题";
+            var isSgl = qm.IsSingle ? "单选题" : "多选题";
             Console.WriteLine($"[{isSgl}] {qm.Text}");
 
             var sb = new StringBuilder();

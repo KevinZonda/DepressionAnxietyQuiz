@@ -37,46 +37,5 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
             Helper.PrintResult(atr.Results);
             Console.WriteLine(About.End);
         }
-
-        public static void PrintQuizModel(QuizModel qm)
-        {
-            var isSgl = qm.IsSingle ? "S" : "M";
-            Console.WriteLine($"[{isSgl}] {qm.Text}");
-
-            var sb = new StringBuilder();
-
-
-            if (qm.InfoLink > 0)
-            {
-                sb.Append('I').Append(qm.InfoLink).Append(", ");
-            }
-
-            var v = qm.Values;
-            foreach (var i in v)
-            {
-                Console.Write($"  - {i.Text}: ");
-                if (i.Values != null)
-                    foreach (var k in i.Values)
-                    {
-                        if (k.Type == ValueType.Score)
-                        {
-                            Console.Write(k.Value + ", ");
-                            if (k.Value > 0 && qm.NotZeroLink > 0)
-                            {
-                                Console.Write("L" + qm.NotZeroLink + ", ");
-                            }
-
-                            continue;
-                        }
-
-                        Console.Write(k.Type.ToString().Substring(0, 1).ToUpper());
-                        Console.Write(k.Value);
-                        Console.Write(", ");
-                    }
-
-
-                Console.WriteLine();
-            }
-        }
     }
 }
