@@ -3,7 +3,7 @@ using KevinZonda.Health.DepressionAnxietyQuiz.Library.Model;
 
 namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
-    public static class Quizz
+    public static class Quiz
     {
         private static readonly List<ValueModel> DefaultValues = new()
         {

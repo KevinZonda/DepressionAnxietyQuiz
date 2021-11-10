@@ -11,16 +11,16 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Welcome.Title);
-            Console.WriteLine(Welcome.Word);
+            Console.WriteLine(About.Title);
+            Console.WriteLine(About.Description);
             Console.WriteLine("输入 y 以开始");
             if (Console.ReadLine().ToLower() != "y")
                 return;
             Console.Clear();
 
-            TestRunner tr = new(Quizz.DepressionQuiz);
+            TestRunner tr = new(Quiz.DepressionQuiz);
             tr.Run();
-            TestRunner atr = new(Quizz.AnxiousQuiz);
+            TestRunner atr = new(Quiz.AnxiousQuiz);
             atr.Run();
             Console.WriteLine(tr);
 
@@ -35,7 +35,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
             Helper.GetResultByAnxietyScore(atr.Score);
             Helper.PrintLink(atr.Links);
             Helper.PrintResult(atr.Results);
-            Console.WriteLine(Welcome.End);
+            Console.WriteLine(About.End);
         }
 
         public static void PrintQuizModel(QuizModel qm)

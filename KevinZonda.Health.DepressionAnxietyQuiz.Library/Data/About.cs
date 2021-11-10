@@ -1,10 +1,10 @@
-﻿namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
+﻿namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
-    public static class Welcome
+    public static class About
     {
         public const string Title = "心情自我评估";
 
-        public const string Word = @"你最近的感觉如何？
+        public const string Description = @"你最近的感觉如何？
 当涉及到情绪时，有时很难认识到或承认我们的感觉不是 100% 准确的。
 
 如果你是16岁或以上，请参加这个简短的问卷调查，以：
