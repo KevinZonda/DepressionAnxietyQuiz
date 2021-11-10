@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using KevinZonda.Health.DepressionAnxietyQuiz.Library;
+using KevinZonda.Health.DepressionAnxietyQuiz.Library.Data;
 using KevinZonda.Health.DepressionAnxietyQuiz.Library.Model;
 using ValueType = KevinZonda.Health.DepressionAnxietyQuiz.Library.Model.ValueType;
 
@@ -17,9 +18,9 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.ConsoleApp
                 return;
             Console.Clear();
 
-            TestRunner tr = new(Quizzes.DepressionQuiz);
+            TestRunner tr = new(Quizz.DepressionQuiz);
             tr.Run();
-            TestRunner atr = new(Quizzes.AnxiousQuiz);
+            TestRunner atr = new(Quizz.AnxiousQuiz);
             atr.Run();
             Console.WriteLine(tr);
 

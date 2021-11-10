@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using KevinZonda.Health.DepressionAnxietyQuiz.Library.Data;
 using KevinZonda.Health.DepressionAnxietyQuiz.Library.Model;
 using ValueType = KevinZonda.Health.DepressionAnxietyQuiz.Library.Model.ValueType;
 
@@ -83,7 +84,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
 
             if (info > 0)
             {
-                var i = Infos.InfoDic[info];
+                var i = Info.Dic[info];
                 Console.WriteLine($"[{i.Title}] {i.Name}");
                 Console.WriteLine(i.Body);
             }

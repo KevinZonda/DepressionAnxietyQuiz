@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using KevinZonda.Health.DepressionAnxietyQuiz.Library.Model;
 
-namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
+namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
-    public class Links
+    public static class Link
     {
-        public static readonly Dictionary<int, LinkModel> LinkDic = new()
+        public static readonly Dictionary<int, LinkModel> Dic = new()
         {
             {
                 849, LinkModel.Create(

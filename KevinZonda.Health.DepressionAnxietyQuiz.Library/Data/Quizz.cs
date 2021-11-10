@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using KevinZonda.Health.DepressionAnxietyQuiz.Library.Model;
 
-namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
+namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
-    public static class Quizzes
+    public static class Quizz
     {
-        private static readonly List<ValueModel> defaultValues = new()
+        private static readonly List<ValueModel> DefaultValues = new()
         {
             new()
             {
@@ -48,43 +48,43 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
                 InfoLink = 188,
                 Text = "你有多少次被沮丧、抑郁或无望的感觉所困扰？",
                 NotZeroLink = 849,
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次对做事情没有兴趣或乐趣？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "您是否经常因入睡困难或睡眠不足或睡太多而烦恼？",
                 NotZeroLink = 861,
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为感到疲惫或精力不足而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多长时间被食欲不佳或暴饮暴食困扰过？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为觉得自己不好，或觉得自己是个失败者，或让自己或家人失望而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多长时间被难以集中注意力的事情所困扰过，比如读报纸或看电视？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "您是否经常因为移动或说话的速度太慢以至于其他人可能会注意到，或者相反 - 因为烦躁或不安，以至于您比平时走动得更多？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
@@ -116,39 +116,39 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
             {
                 Text = "你有多少次因为感到紧张、焦虑或提心吊胆而受到困扰？",
                 InfoLink = 161,
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 NotZeroLink = 850,
                 Text = "你有多少次因为无法停止或控制忧虑而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为对不同的事情担心太多而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为难以放松而受到困扰？",
                 NotZeroLink = 851,
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为坐立不安，难以静坐而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "您是否经常因容易生气或易怒而烦恼？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {
                 Text = "你有多少次因为害怕可能会发生可怕的事情而感到困扰？",
-                Values = defaultValues
+                Values = DefaultValues
             },
             new()
             {

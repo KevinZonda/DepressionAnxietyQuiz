@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using KevinZonda.Health.DepressionAnxietyQuiz.Library.Data;
 
 namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
 {
@@ -9,7 +10,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
         {
             foreach (var link in links)
             {
-                var m = Links.LinkDic[link];
+                var m = Link.Dic[link];
                 if (m == null)
                     continue;
                 Console.WriteLine($"- {m.Text}\n{m.Link}");
@@ -20,7 +21,7 @@ namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
         {
             foreach (var link in results)
             {
-                var m = Results.ResultDic[link];
+                var m = Result.Dic[link];
                 if (m == null)
                     continue;
                 Console.WriteLine($"- {m}");

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace KevinZonda.Health.DepressionAnxietyQuiz.Library
+namespace KevinZonda.Health.DepressionAnxietyQuiz.Library.Data
 {
-    public static class Results
+    public static class Result
     {
-        public static readonly Dictionary<int, string> ResultDic = new()
+        public static readonly Dictionary<int, string> Dic = new()
         {
             {
                 667,
